@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Countrles" representedClassName="Countrles" syncable="YES" codeGenerationType="class">
+        <attribute name="countryCode" attributeType="String"/>
+        <attribute name="countryName" attributeType="String" defaultValueString=""/>
+        <attribute name="newConfirmed" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="newDeaths" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="newRecovered" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalConfirmed" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalRecovered" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="countryCode"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Global" representedClassName="Global" syncable="YES" codeGenerationType="class">
+        <attribute name="countryCode" optional="YES" attributeType="String"/>
+        <attribute name="newConfirmed" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="newDeaths" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="newRecovered" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalConfirmed" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalRecovered" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="countryCode"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Countrles" positionX="-242.359375" positionY="-18.671875" width="128" height="163"/>
+        <element name="Global" positionX="-85.5390625" positionY="-2.390625" width="154.74609375" height="148"/>
+    </elements>
+</model>

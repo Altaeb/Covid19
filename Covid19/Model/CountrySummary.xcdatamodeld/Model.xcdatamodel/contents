@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CountrySummary" representedClassName="CountrySummary" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="countryCode" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="med10yrEarnings" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="newConfirmed" optional="YES" attributeType="String"/>
+        <attribute name="newDeaths" optional="YES" attributeType="String"/>
+        <attribute name="newRecovered" optional="YES" attributeType="String"/>
+        <attribute name="totalConfirmed" optional="YES" attributeType="String"/>
+        <attribute name="totalDeaths" optional="YES" attributeType="String"/>
+        <attribute name="totalRecovered" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="countryCode"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="CountrySummary" positionX="-63" positionY="-18" width="128" height="193"/>
+    </elements>
+</model>
